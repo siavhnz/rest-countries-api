@@ -42,6 +42,7 @@ Users should be able to:
 ## My process
 
 - Preparing workflow(Installing React, Adding assets, Preparing README.md)
+- Creating Components
 
 
 ### Built with
