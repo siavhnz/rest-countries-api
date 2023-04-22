@@ -43,6 +43,8 @@ Users should be able to:
 
 - Preparing workflow(Installing React, Adding assets, Preparing README.md)
 - Creating Components
+- Working on mobile design based on `design` folder - 357px
+    - Installing Fonts, Preflight css, Working on design
 
 
 ### Built with

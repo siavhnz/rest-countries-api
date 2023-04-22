@@ -1,51 +1,77 @@
-import BackIcon from "../../assets/images/back.svg";
+import { Link } from "react-router-dom";
+import BackButton from "../UI/BackButton";
+import ProgressiveImg from "../UI/ProgressiveImg";
+import styles from "./Country.module.css";
 
-const Country = ({flag}) => {
+const Country = () => {
     return <>
-        <div>
-            <img src={BackIcon} alt="" aria-hidden="true" width="32"/>
-            <span>back</span>
+        <div className={styles["back-btn-container"]}>
+            <Link to="/">
+                <BackButton />
+            </Link>
         </div>
-        <div>
-            <div>
-                <img src="https://flagcdn.com/be.svg" alt="country falg" width="150" />
+        
+        <div className={styles.info}>
+            <div className={styles.image}>
+                <ProgressiveImg src="https://flagcdn.com/be.svg" alt="country falg" />
             </div>
-            <div>
-                <h1>Belgium</h1>
-                <div>
-                    <dl>
-                        <dt>Native Name</dt>
-                        <dd>Belgie</dd>
-                        <dt>Population</dt>
-                        <dd>11,319,511</dd>
-                        <dt>Region</dt>
-                        <dd>Europe</dd>
-                        <dt>Sub Region</dt>
-                        <dd>Western Europe</dd>
-                        <dt>capital</dt>
-                        <dd>Brussele</dd>
-                    </dl>
-                    <dl>
-                        <dt>Top Level Domain</dt>
-                        <dd>.be</dd>
-                        <dt>Currencies</dt>
-                        <dd>Euro</dd>
-                        <dt>Languages</dt>
-                        <dd>Duch, French, German</dd>
-                    </dl>
+            <div className={styles.detail}>
+                <h1 className={styles.title}>Belgium</h1>
+                <div className={styles["dl-container"]}>
+                    <div className={styles.first}>
+                        <dl>
+                            <dt>Native Name:</dt>
+                            <dd>Belgie</dd>
+                        </dl>
+                        <dl>
+                            <dt>Population:</dt>
+                            <dd>11,319,511</dd>
+                        </dl>
+                        <dl>
+                            <dt>Region:</dt>
+                            <dd>Europe</dd>
+                        </dl>
+                        <dl>
+                            <dt>Sub Region:</dt>
+                            <dd>Western Europe</dd>
+                        </dl>
+                        <dl>
+                            <dt>capital:</dt>
+                            <dd>Brussele</dd>
+                        </dl>
+                    </div>
+                    <div className={styles.second}>
+                        <dl>
+                            <dt>Top Level Domain:</dt>
+                            <dd>.be</dd>
+                        </dl>
+                        <dl>
+                            <dt>Currencies:</dt>
+                            <dd>Euro</dd>
+                        </dl>
+                        <dl>
+                            <dt>Languages:</dt>
+                            <dd>Duch, French, German</dd>
+                        </dl>
+                    </div>
                 </div>
-                <div>
-                    <h3>
+                <div className={styles.borders}>
+                    <h3 className={styles["sub-title"]}>
                         Border Countries:
                     </h3>
-                    <div>
-                        Frans
-                    </div>
-                    <div>
-                        Germany
-                    </div>
-                    <div>
-                        Netherlands
+                    <div className={styles["border-items"]}>
+                        <div className={styles.border}>
+                            France
+                        </div>
+                        <div className={styles.border}>
+                            Germany
+                        </div>
+                        <div className={styles.border}>
+                            Netherlands
+                        </div>
+                        <div className={styles.border}>
+                            Netherlands
+                        </div>
                     </div>
                 </div>
             </div>

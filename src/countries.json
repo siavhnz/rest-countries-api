@@ -1,74 +1,67 @@
 [
   {
-    "name": "Afghanistan",
-    "topLevelDomain": [".af"],
-    "alpha2Code": "AF",
-    "alpha3Code": "AFG",
-    "callingCodes": ["93"],
-    "capital": "Kabul",
-    "altSpellings": ["AF", "Afġānistān"],
-    "subregion": "Southern Asia",
-    "region": "Asia",
-    "population": 40218234,
-    "latlng": [33, 65],
-    "demonym": "Afghan",
-    "area": 652230,
-    "timezones": ["UTC+04:30"],
-    "borders": ["IRN", "PAK", "TKM", "UZB", "TJK", "CHN"],
-    "nativeName": "افغانستان",
-    "numericCode": "004",
+    "name": "Germany",
+    "topLevelDomain": [".de"],
+    "alpha2Code": "DE",
+    "alpha3Code": "DEU",
+    "callingCodes": ["49"],
+    "capital": "Berlin",
+    "altSpellings": [
+      "DE",
+      "Federal Republic of Germany",
+      "Bundesrepublik Deutschland"
+    ],
+    "subregion": "Central Europe",
+    "region": "Europe",
+    "population": 83240525,
+    "latlng": [51, 9],
+    "demonym": "German",
+    "area": 357114,
+    "gini": 31.9,
+    "timezones": ["UTC+01:00"],
+    "borders": ["AUT", "BEL", "CZE", "DNK", "FRA", "LUX", "NLD", "POL", "CHE"],
+    "nativeName": "Deutschland",
+    "numericCode": "276",
     "flags": {
-      "svg": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
-      "png": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_the_Taliban.svg/320px-Flag_of_the_Taliban.svg.png"
+      "svg": "https://flagcdn.com/de.svg",
+      "png": "https://flagcdn.com/w320/de.png"
     },
     "currencies": [
       {
-        "code": "AFN",
-        "name": "Afghan afghani",
-        "symbol": "؋"
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
       }
     ],
     "languages": [
       {
-        "iso639_1": "ps",
-        "iso639_2": "pus",
-        "name": "Pashto",
-        "nativeName": "پښتو"
-      },
-      {
-        "iso639_1": "uz",
-        "iso639_2": "uzb",
-        "name": "Uzbek",
-        "nativeName": "Oʻzbek"
-      },
-      {
-        "iso639_1": "tk",
-        "iso639_2": "tuk",
-        "name": "Turkmen",
-        "nativeName": "Türkmen"
+        "iso639_1": "de",
+        "iso639_2": "deu",
+        "name": "German",
+        "nativeName": "Deutsch"
       }
     ],
     "translations": {
-      "br": "Afghanistan",
-      "pt": "Afeganistão",
-      "nl": "Afghanistan",
-      "hr": "Afganistan",
-      "fa": "افغانستان",
-      "de": "Afghanistan",
-      "es": "Afganistán",
-      "fr": "Afghanistan",
-      "ja": "アフガニスタン",
-      "it": "Afghanistan",
-      "hu": "Afganisztán"
+      "br": "Alamagn",
+      "pt": "Alemanha",
+      "nl": "Duitsland",
+      "hr": "Njemačka",
+      "fa": "آلمان",
+      "de": "Deutschland",
+      "es": "Alemania",
+      "fr": "Allemagne",
+      "ja": "ドイツ",
+      "it": "Germania",
+      "hu": "Grúzia"
     },
-    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
+    "flag": "https://flagcdn.com/de.svg",
     "regionalBlocs": [
       {
-        "acronym": "SAARC",
-        "name": "South Asian Association for Regional Cooperation"
+        "acronym": "EU",
+        "name": "European Union"
       }
     ],
-    "cioc": "AFG",
+    "cioc": "GER",
     "independent": true
   },
   {
@@ -5744,71 +5737,6 @@
     },
     "flag": "https://flagcdn.com/ge.svg",
     "cioc": "GEO",
-    "independent": true
-  },
-  {
-    "name": "Germany",
-    "topLevelDomain": [".de"],
-    "alpha2Code": "DE",
-    "alpha3Code": "DEU",
-    "callingCodes": ["49"],
-    "capital": "Berlin",
-    "altSpellings": [
-      "DE",
-      "Federal Republic of Germany",
-      "Bundesrepublik Deutschland"
-    ],
-    "subregion": "Central Europe",
-    "region": "Europe",
-    "population": 83240525,
-    "latlng": [51, 9],
-    "demonym": "German",
-    "area": 357114,
-    "gini": 31.9,
-    "timezones": ["UTC+01:00"],
-    "borders": ["AUT", "BEL", "CZE", "DNK", "FRA", "LUX", "NLD", "POL", "CHE"],
-    "nativeName": "Deutschland",
-    "numericCode": "276",
-    "flags": {
-      "svg": "https://flagcdn.com/de.svg",
-      "png": "https://flagcdn.com/w320/de.png"
-    },
-    "currencies": [
-      {
-        "code": "EUR",
-        "name": "Euro",
-        "symbol": "€"
-      }
-    ],
-    "languages": [
-      {
-        "iso639_1": "de",
-        "iso639_2": "deu",
-        "name": "German",
-        "nativeName": "Deutsch"
-      }
-    ],
-    "translations": {
-      "br": "Alamagn",
-      "pt": "Alemanha",
-      "nl": "Duitsland",
-      "hr": "Njemačka",
-      "fa": "آلمان",
-      "de": "Deutschland",
-      "es": "Alemania",
-      "fr": "Allemagne",
-      "ja": "ドイツ",
-      "it": "Germania",
-      "hu": "Grúzia"
-    },
-    "flag": "https://flagcdn.com/de.svg",
-    "regionalBlocs": [
-      {
-        "acronym": "EU",
-        "name": "European Union"
-      }
-    ],
-    "cioc": "GER",
     "independent": true
   },
   {
@@ -16819,6 +16747,78 @@
       }
     ],
     "cioc": "ZIM",
+    "independent": true
+  },
+  {
+    "name": "Afghanistan",
+    "topLevelDomain": [".af"],
+    "alpha2Code": "AF",
+    "alpha3Code": "AFG",
+    "callingCodes": ["93"],
+    "capital": "Kabul",
+    "altSpellings": ["AF", "Afġānistān"],
+    "subregion": "Southern Asia",
+    "region": "Asia",
+    "population": 40218234,
+    "latlng": [33, 65],
+    "demonym": "Afghan",
+    "area": 652230,
+    "timezones": ["UTC+04:30"],
+    "borders": ["IRN", "PAK", "TKM", "UZB", "TJK", "CHN"],
+    "nativeName": "افغانستان",
+    "numericCode": "004",
+    "flags": {
+      "svg": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
+      "png": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_the_Taliban.svg/320px-Flag_of_the_Taliban.svg.png"
+    },
+    "currencies": [
+      {
+        "code": "AFN",
+        "name": "Afghan afghani",
+        "symbol": "؋"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "ps",
+        "iso639_2": "pus",
+        "name": "Pashto",
+        "nativeName": "پښتو"
+      },
+      {
+        "iso639_1": "uz",
+        "iso639_2": "uzb",
+        "name": "Uzbek",
+        "nativeName": "Oʻzbek"
+      },
+      {
+        "iso639_1": "tk",
+        "iso639_2": "tuk",
+        "name": "Turkmen",
+        "nativeName": "Türkmen"
+      }
+    ],
+    "translations": {
+      "br": "Afghanistan",
+      "pt": "Afeganistão",
+      "nl": "Afghanistan",
+      "hr": "Afganistan",
+      "fa": "افغانستان",
+      "de": "Afghanistan",
+      "es": "Afganistán",
+      "fr": "Afghanistan",
+      "ja": "アフガニスタン",
+      "it": "Afghanistan",
+      "hu": "Afganisztán"
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
+    "regionalBlocs": [
+      {
+        "acronym": "SAARC",
+        "name": "South Asian Association for Regional Cooperation"
+      }
+    ],
+    "cioc": "AFG",
     "independent": true
   }
 ]

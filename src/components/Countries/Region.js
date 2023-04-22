@@ -1,16 +1,15 @@
-import data from "../../region.json";
+import Select from "../UI/Select";
+import styles from "./Region.module.css";
 
 const Region = () => {
-    return <select>
-        <option>
-            Filter by Region
-        </option>
-        {data.map((item) => {
-            return <option key={item.region}>
-                {item.region}
-            </option>
-        })}
-    </select>
+    const data = [ "Africa", "America", "Asia", "Europe", "Oceania"];
+    return <div className={styles.region}>
+        <Select 
+        showList = { false }
+        defaultTxt="Filter by Region"
+        list={data}
+        />
+    </div>
 }
 
 export default Region;

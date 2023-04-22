@@ -1,0 +1,16 @@
+
+/* 
+
+    Inspired by Stephanie Eckles
+    https://moderncss.dev/custom-select-styles-with-pure-css/
+*/
+
+.region {
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    width:12.5rem;
+    max-width: 100%;
+    margin-top: 2.375rem;
+    border-radius: var(--border-radius);
+    font-size: 0.75rem;
+}

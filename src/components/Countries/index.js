@@ -5,11 +5,11 @@ import List from "./List";
 
 const Countries = () => {
     return (
-        <Wrapper>
+        <>
             <Input />
             <Region />
             <List />
-        </Wrapper>
+        </>
     );
 }
 

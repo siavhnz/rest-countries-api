@@ -1,0 +1,17 @@
+.container {
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: center;
+    column-gap: 0.5rem;
+    padding: 0.25rem;
+    width: 6.5rem;
+}
+
+.container > svg {
+    width: 1rem;
+}
+
+.container > span {
+    color: var(--color-dark-gray)
+}

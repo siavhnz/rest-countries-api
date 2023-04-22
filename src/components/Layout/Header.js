@@ -1,7 +1,8 @@
 import { useState } from "react";
 import MoonIcon from "../../assets/images/moon.svg";
-import SunIcon from "../../assets/images/sun.svg";
+import MoonFilledIcon from "../../assets/images/moon-filled.svg";
 import Wrapper from "./Wrapper";
+import styles from "./Header.module.css";
 
 const Header = () => {
 
@@ -11,29 +12,18 @@ const Header = () => {
         setIsDarkMode((state) => {return !state});
     }
 
-    const Content =
-        <Wrapper>
-            <p>
-                Where in the world
-            </p>
-            {
-                isDarkMode && 
-                <div onClick={ toggleThemeHandler }>
-                    <img src={MoonIcon} alt="change theme to dark" width="32"  />
-                    <span>dark mode</span>
-                </div>
-            }
-            {
-                !isDarkMode &&
-                <div onClick={ toggleThemeHandler }>
-                    <img src={SunIcon} alt="change theme to light" width="32" />
-                    <span>light mode</span>
-                </div>
-            }
-        </Wrapper>;
-
     return <header>
-        { Content }
+        <Wrapper cssClass={styles.header}>
+            <h1 className={styles.title}>
+                Where in the world?
+            </h1>
+            <div onClick={ toggleThemeHandler } className={styles["theme-mode"]}>
+                <img src={ isDarkMode ? MoonFilledIcon : MoonIcon } alt="change theme mode" />
+                <span> 
+                    { isDarkMode ? "Light mode" : "Dark mode" }
+                </span>
+            </div>
+        </Wrapper>
     </header>
 }
 
