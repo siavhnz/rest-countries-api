@@ -14,14 +14,16 @@ const Header = () => {
 
     return <header>
         <Wrapper cssClass={styles.header}>
-            <h1 className={styles.title}>
-                Where in the world?
-            </h1>
-            <div onClick={ toggleThemeHandler } className={styles["theme-mode"]}>
-                <img src={ isDarkMode ? MoonFilledIcon : MoonIcon } alt="change theme mode" />
-                <span> 
-                    { isDarkMode ? "Light mode" : "Dark mode" }
-                </span>
+            <div className={styles.inner}>
+                <h1 className={styles.title}>
+                    Where in the world?
+                </h1>
+                <div onClick={ toggleThemeHandler } className={styles["theme-mode"]}>
+                    <img src={ isDarkMode ? MoonFilledIcon : MoonIcon } alt="change theme mode" />
+                    <span> 
+                        { isDarkMode ? "Light Mode" : "Dark Mode" }
+                    </span>
+                </div>
             </div>
         </Wrapper>
     </header>

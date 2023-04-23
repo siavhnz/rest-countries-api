@@ -36,7 +36,7 @@ const Country = () => {
                             <dd>Western Europe</dd>
                         </dl>
                         <dl>
-                            <dt>capital:</dt>
+                            <dt>Capital:</dt>
                             <dd>Brussele</dd>
                         </dl>
                     </div>

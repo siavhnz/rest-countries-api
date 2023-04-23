@@ -4,6 +4,7 @@
     box-shadow: var(--box-shadow);
     padding-bottom: 1rem;
     margin-bottom: 2.25rem;
+
 }
 
 .flag {
@@ -35,4 +36,10 @@
 .spec > dd {
     font-size: 0.85rem;
     font-weight: 300;
+}
+
+@media (min-width: 40em) { /* 640px */
+    .card {
+        margin-bottom: 0;
+    }
 }

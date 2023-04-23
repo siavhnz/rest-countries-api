@@ -1,0 +1,16 @@
+.interaction-container {
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 40em) { /* 640px */
+    .interaction-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 90em) { /* 1440px */
+    .interaction-container {
+        margin-top: 3rem;
+    }
+}

@@ -45,6 +45,8 @@ Users should be able to:
 - Creating Components
 - Working on mobile design based on `design` folder - 357px
     - Installing Fonts, Preflight css, Working on design
+- Working on tablet and desktop design based on `design` folder
+
 
 
 ### Built with

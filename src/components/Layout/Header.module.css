@@ -1,14 +1,19 @@
 .header {
+   
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+}
+
+.inner {
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-white);
     padding-top: 2rem;
     padding-bottom: 1.75rem;
-    box-shadow: var(--box-shadow);
 }
 
 .theme-mode {
     display: flex;
+    align-items: center;
     column-gap: 0.75rem;
     font-size: 0.75rem;
 }
@@ -16,9 +21,40 @@
 .theme-mode > img {
     width: 0.75rem;
     padding-bottom: 0.25rem;
+    rotate: -20deg;
+}
+
+.theme-mode > span {
+    width: 3.75rem;
 }
 
 .title {
     font-weight: 800;
     font-size: 0.87rem;
+}
+
+
+@media (min-width: 40em) { /* 640px */
+    
+    .inner {
+        padding-top: 1.25rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .theme-mode {
+        font-size: 1rem;
+        font-weight: 600;
+        padding-top: 0.25rem;
+    }
+
+    .theme-mode > img {
+        width: 0.85rem;
+    }
+    .theme-mode > span {
+        width: 5.15rem;
+    }
 }
