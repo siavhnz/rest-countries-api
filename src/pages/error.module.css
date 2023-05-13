@@ -1,0 +1,20 @@
+.container {
+    margin: 1rem auto 1rem;
+    max-width: 30rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.vpn {
+    font-weight: bold;
+}
+
+body[data-theme="theme-dark"] .container {
+    color: var(--color-white);
+}
