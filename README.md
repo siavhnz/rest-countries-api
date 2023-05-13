@@ -31,8 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
+![screenshot](./screenshot.jpg)
 
 ### Links
 
@@ -44,26 +43,20 @@ Users should be able to:
 - Preparing workflow(Installing React, Adding assets, Preparing README.md)
 - Creating Components
 - Working on mobile design based on `design` folder - 357px
-    - Installing Fonts, Preflight css, Working on design
+  - Installing Fonts, Preflight css, Working on design
 - Working on tablet and desktop design based on `design` folder
 - Working on functionality
   - Load data, Search, Filter using react-router-dom
-
-
+  - Toggle between dark and light mode
 
 ### Built with
 
-
 ### What I learned
-
 
 ### Continued development
 
-
 ### Useful resources
 
-
 ## Author
-
 
 ## Acknowledgments

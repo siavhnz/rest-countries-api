@@ -20,3 +20,10 @@
     }
 }
 
+/* dark mode */
+
+body[data-theme="theme-dark"] .region {
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+}
+

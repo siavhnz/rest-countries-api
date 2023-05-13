@@ -63,3 +63,15 @@ svg.spinner {
     }
 
 }
+
+
+/* dark mode */
+
+body[data-theme="theme-dark"] .border {
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+}
+
+body[data-theme="theme-dark"] .sub-title {
+    color: var(--color-white)
+}

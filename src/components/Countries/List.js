@@ -8,8 +8,6 @@ const List = () => {
 
     const { countries }  = useLoaderData();
     const navigation = useNavigation();
-    
-    console.log(countries[2])
 
     const Loading = <p>loading...</p>;
     const Content = countries.length ? countries.map((item) => {

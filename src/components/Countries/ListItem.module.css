@@ -43,3 +43,11 @@
         margin-bottom: 0;
     }
 }
+
+
+/* dark mode */
+
+body[data-theme="theme-dark"] .card{
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+}

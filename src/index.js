@@ -9,6 +9,7 @@ import '../src/assets/css/index.css';
 
 import { loadAllCountries } from './store/loaders/home';
 import { loadCountry } from './store/loaders/detail';
+import AppContextProvider from './store/context/app-context';
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <AppContextProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </AppContextProvider>
   </React.StrictMode>
 );
 

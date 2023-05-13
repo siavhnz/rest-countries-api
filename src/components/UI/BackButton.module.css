@@ -28,3 +28,11 @@
         color: #222;
     }
 }
+
+/* dark mode */
+
+body[data-theme="theme-dark"] .container a,
+body[data-theme="theme-dark"] .container span{
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+}

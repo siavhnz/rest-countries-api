@@ -55,3 +55,18 @@
         width: 30rem;
     }
 }
+
+
+/* dark mode */
+
+body[data-theme="theme-dark"] .input,
+body[data-theme="theme-dark"] .input > input {
+    background-color: var(--color-dark-blue);
+}
+
+body[data-theme="theme-dark"] .input > input,
+body[data-theme="theme-dark"] .input > input::placeholder,
+body[data-theme="theme-dark"] .input > svg,
+body[data-theme="theme-dark"] .input > svg.spinner {
+    color: var(--color-white);
+}
