@@ -1,17 +1,26 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import { useLoaderData, useNavigation, useSubmit } from "react-router-dom";
 
+import {ReactComponent as SpinnerIcon } from "../../assets/images/spinner.svg";
 import styles from "./Select.module.css";
-
 
 
 /**
  * Inspired by https://codesandbox.io/s/react-custom-select-bpsi7?file=/src/CustomSelect.js:401-462
  */
 const Select = ({defaultTxt, showList, list}) => {
+
+    const { r } = useLoaderData();
     const [state, setState] = useState({
-        defaultTxt,
+        text: defaultTxt,
         showList,
     });
+    const selectRef = useRef();
+    const submit = useSubmit();
+    const navigation = useNavigation();
+
+    const filtering = navigation.location && 
+    new URLSearchParams(navigation.location.search).has("r");
 
     useEffect(() => {
         document.addEventListener("mousedown", handleClickOutside);
@@ -21,6 +30,15 @@ const Select = ({defaultTxt, showList, list}) => {
         }
 
     });
+
+    useEffect(() => {
+        setState((prevState) => {
+            return {
+                ...prevState,
+                text: r || defaultTxt,
+            }
+        })
+    }, [r, defaultTxt])
 
     const handleClickOutside = e => {
         
@@ -48,10 +66,22 @@ const Select = ({defaultTxt, showList, list}) => {
     }
 
     const handleOptionClick = e => {
+        const value = e.target.getAttribute("data-value")
+        
+
+        // Prevent Load data on same value for second time
+        if(value !== state.text){
+            submit({
+                "r": value !== defaultTxt ? value : ""
+            });
+        }
+        
         setState({
-          defaultTxt: e.target.getAttribute("data-value"),
+          text: value,
           showList: false
         });
+
+
     };
 
     return (
@@ -60,8 +90,14 @@ const Select = ({defaultTxt, showList, list}) => {
                 className={styles["text-container"]}
                 onClick={handleToggleList}
                 >
-                    <span>{state.defaultTxt}</span>
-                    <span className={state.showList ? `${styles.arrow} ${styles.active}` : styles.arrow}></span>
+                    <span ref={selectRef}>{state.text}</span>
+                    {
+                        filtering ?
+                        <SpinnerIcon className={styles.spinner} alt="" aria-hidden="true" focusable="false" />
+                        :
+                        <span className={state.showList ? `${styles.arrow} ${styles.active}` : styles.arrow}></span>
+                    }
+                    
             </div>
             {
                 state.showList && (

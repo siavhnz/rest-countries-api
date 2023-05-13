@@ -1,4 +1,4 @@
-.container {
+.container a{
     background-color: var(--color-white);
     box-shadow: var(--box-shadow);
     display: flex;
@@ -8,23 +8,23 @@
     width: 6.5rem;
 }
 
-.container > svg {
+.container svg {
     width: 1rem;
 }
 
-.container > span {
+.container span {
     color: var(--color-dark-gray)
 }
 
 @media (min-width: 90em) { /* 1440px */
-    .container {
+    .container a{
        width: 8.5rem;
        padding: 0.5rem;
        column-gap: 0.75rem;
        border-radius: var(--border-radius);
     }
 
-    .container > span {
+    .container span {
         color: #222;
     }
 }

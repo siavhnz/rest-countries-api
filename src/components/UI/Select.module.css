@@ -1,29 +1,48 @@
 
-  .select-container {
-    display: inline-block;
-    width: 100%;
-    position: relative;
-    background-color: inherit;
-    font-size: 0.75rem;
-  }
-  
-  .text-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.25rem 1rem 1.5rem;
-  }
+.select-container {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  background-color: inherit;
+  font-size: 0.75rem;
+}
 
-  .arrow {
-    width: 0.8em;
-    height: 0.7em;
-    background-color: #000;
-    clip-path: polygon(80% 50%, 50% 10%, 20% 50%, 10% 50%, 50% 0, 90% 50%);
+.text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem 1rem 1.5rem;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 0.8em;
+  height: 0.7em;
+  background-color: #000;
+  clip-path: polygon(80% 50%, 50% 10%, 20% 50%, 10% 50%, 50% 0, 90% 50%);
+}
+
+.arrow.active {
+  clip-path: polygon(80% 50%, 50% 90%, 20% 50%, 10% 50%, 50% 100%, 90% 50%);
+}
+
+.text-container  > svg {
+  width: 0.9rem;
+  color: var(--color-dark-gray);
+}
+
+.text-container > svg.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
   }
-  
-  .arrow.active {
-    clip-path: polygon(80% 50%, 50% 90%, 20% 50%, 10% 50%, 50% 100%, 90% 50%);
+  to {
+      transform: rotate(360deg);
   }
+}
 
   .select-options {
     width: 100%;
@@ -39,11 +58,6 @@
     padding: 0rem 1.5rem 0.3755rem 1.5rem;
     background-color: inherit;
     cursor: pointer;
-  }
-  
-  .select-option:hover {
-    background-color: #32a6a6;
-    color: #ffffff;
   }
   
 @media (min-width: 40em) { /* 640px */

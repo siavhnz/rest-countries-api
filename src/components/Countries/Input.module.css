@@ -14,6 +14,19 @@
     color: var(--color-dark-gray);
 }
 
+.input > svg.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .input > input {
     color: var(--color-dark-gray);
     font-size: 0.75rem;

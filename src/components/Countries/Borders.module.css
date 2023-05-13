@@ -1,0 +1,65 @@
+
+.borders {
+    margin-top: 2.5rem;
+}
+
+
+svg.spinner {
+    width: 0.9rem;
+    color: var(--color-dark-gray);
+}
+  
+svg.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+
+.sub-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.border-items {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.65rem;
+    row-gap: 0.65rem;
+    margin-top: 1rem;
+}
+
+.border {
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    font-size: 0.75rem;
+    padding: 0.365rem 1rem;
+    min-width: 6rem;
+    text-align: center;
+}
+
+
+@media (min-width: 64em) { /* 1020px */
+
+    .borders{
+        display: flex;
+        align-items: baseline;
+        margin-top: 4rem;
+    }
+
+    .sub-title {
+        margin-right: 1rem;
+        min-width: 8rem;
+    }
+
+    .border-items {
+        margin-top: 0;
+    }
+
+}
