@@ -25,7 +25,7 @@ const Input = () => {
             searching ? 
             <SpinnerIcon className={styles.spinner} aria-hidden="true" focusable="false" />
             : 
-            <SearchIcon alt="" aria-hidden="true" focusable="false" />
+            <SearchIcon aria-hidden="true" focusable="false" />
         }
         <input 
             defaultValue={q}
