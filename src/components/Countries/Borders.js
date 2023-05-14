@@ -37,7 +37,7 @@ const Borders = ({cca3}) => {
     const {isLoading, data } = state;
 
     if(isLoading && cca3.length > 0) {
-        return <SpinnerIcon className={styles.spinner} alt="" aria-hidden="true" focusable="false" />                    
+        return <SpinnerIcon className={styles.spinner} aria-hidden="true" focusable="false" />                    
     }
 
     return  !isLoading && data.length > 0 &&
@@ -49,7 +49,8 @@ const Borders = ({cca3}) => {
             {
                 data.map((item) => {
                     item = guardCountryData(item);
-                    return <Link key={item.name} to={`/./country/${item.name}`}>
+                    const link = item.name.toLowerCase().split(" ").join("_")
+                    return <Link key={item.name} to={`/./country/${link}`}>
                         <div className={styles.border}>
                             {item.name}
                         </div>

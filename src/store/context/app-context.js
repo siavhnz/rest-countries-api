@@ -13,7 +13,6 @@ const AppContextProvider = ({children}) => {
     })
 
     const changeTheme = () => {
-        console.log("changeTheme")
         setTheme((prevState) => {
             console.log(prevState)
             return {light: !prevState.light}

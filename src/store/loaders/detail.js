@@ -2,9 +2,10 @@ import { API_URL } from "../utility/api-url";
 
 export const loadCountry = async ({ params }) => {
     try {
-        console.log(params.name);
+        const name = params.name.split("_").join(" ");
+
         // Specific country
-        let url = `${API_URL}name/${params.name}?fullText=true`;
+        let url = `${API_URL}name/${name}?fullText=true`;
         
         // Fetch data
         const res = await fetch(url);

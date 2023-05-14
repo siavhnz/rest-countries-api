@@ -4,8 +4,11 @@ import PlaceholderImg from "../../assets/images/flag.png"
 import styles from "./ListItem.module.css";
 
 const ListItem = ({flag, name, population, region, capital}) => {
+
+    const link = name.toLowerCase().split(" ").join("_");
+
     return <div className={styles.card}>
-        <Link to={`country/${name}`}>
+        <Link to={`country/${link}`}>
             <ProgressiveImg 
             src={flag}
             placeholderSrc={PlaceholderImg}
@@ -13,7 +16,7 @@ const ListItem = ({flag, name, population, region, capital}) => {
             className={styles.flag} />
         </Link>
         <div className={styles["spec-container"]}>
-            <Link to={`country/${name}`}>
+            <Link to={`country/${link}`}>
                 <h2 className={styles.title}>{name}</h2>
             </Link>
             <dl className={styles.spec}>
