@@ -1,6 +1,6 @@
 # Frontend Mentor - REST Countries API with color theme switcher solution
 
-This is a solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca).
 
 ## Table of contents
 
@@ -31,12 +31,13 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot](./screenshot.jpg)
+![screenshot](./screenshot/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution: [frontendmentor.io](https://www.frontendmentor.io/solutions/rest-countries-api-fZYpAQrf03)
+
+- Live Site: [netlify.app](https://ch-rest-countries-api.netlify.app)
 
 ## My process
 
@@ -51,12 +52,35 @@ Users should be able to:
 
 ### Built with
 
+- React
+- React Router
+- Css Module
+- Flex, Grid, Custom variable
+- Semantic HTML5 markup
+- Mobile first workflow
+
 ### What I learned
+
+In this project I learned to use React Router (loader and action)
 
 ### Continued development
 
+More on React, React Router, Framer-Motion and some other libraries
+
 ### Useful resources
+
+[React Router](https://reactrouter.com)
 
 ## Author
 
+- github - [@siavhnz](https://www.github.com/siavhnz)
+
+- Frontend Mentor - [@siavhnz](https://www.frontendmentor.io/profile/siavhnz)
+
 ## Acknowledgments
+
+Thanks To
+
+[Frontendmentor.io](https://www.frontendmentor.io/challenges) - for their Excitement challenges  
+
+[Perfect Pixel](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en) - for such a great extension
