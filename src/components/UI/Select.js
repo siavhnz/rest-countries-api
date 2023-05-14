@@ -93,7 +93,7 @@ const Select = ({defaultTxt, showList, list}) => {
                     <span ref={selectRef}>{state.text}</span>
                     {
                         filtering ?
-                        <SpinnerIcon className={styles.spinner} alt="" aria-hidden="true" focusable="false" />
+                        <SpinnerIcon className={styles.spinner} aria-hidden="true" focusable="false" />
                         :
                         <span className={state.showList ? `${styles.arrow} ${styles.active}` : styles.arrow}></span>
                     }

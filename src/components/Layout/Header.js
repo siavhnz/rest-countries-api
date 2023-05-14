@@ -42,7 +42,7 @@ const Header = () => {
                     Where in the world?
                 </h1>
                 <div onClick={ handleThemeChange } className={styles["theme-mode"]}>
-                    { theme.light ? <MoonIcon /> : <MoonFilledIcon /> }
+                    { theme.light ? <MoonIcon aria-hidden="true" focusable="false" /> : <MoonFilledIcon aria-hidden="true" focusable="false"/> }
                     <span> 
                         Dark Mode
                     </span>

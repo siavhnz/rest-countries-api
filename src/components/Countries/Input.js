@@ -23,7 +23,7 @@ const Input = () => {
     return <Form className={styles.input}>
         {
             searching ? 
-            <SpinnerIcon className={styles.spinner} alt="" aria-hidden="true" focusable="false" />
+            <SpinnerIcon className={styles.spinner} aria-hidden="true" focusable="false" />
             : 
             <SearchIcon alt="" aria-hidden="true" focusable="false" />
         }
